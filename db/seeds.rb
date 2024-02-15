@@ -30,3 +30,13 @@ user2_apartments = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBSF2x6QbX697RXfV7WdOtqCxF9glLOlF_37xL7pvvea_bWK8JkWHu1llBVz8k9LmFbY&usqp=CAU"
   }
 ]
+
+user1_apartments.each do |apartment|
+  user1.apartments.create(apartment)
+  p "created: #{apartment}"
+end
+
+user2_apartments.each do |apartment|
+  user2.apartments.create(apartment)
+  p "created: #{apartment}"
+end
